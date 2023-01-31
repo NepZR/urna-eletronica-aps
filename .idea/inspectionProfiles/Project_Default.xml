@@ -1,0 +1,126 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="196" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="HttpUrlsUsage" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredUrls">
+        <list>
+          <option value="http://localhost" />
+          <option value="http://127.0.0.1" />
+          <option value="http://0.0.0.0" />
+          <option value="http://www.w3.org/" />
+          <option value="http://json-schema.org/draft" />
+          <option value="http://java.sun.com/" />
+          <option value="http://xmlns.jcp.org/" />
+          <option value="http://javafx.com/javafx/" />
+          <option value="http://javafx.com/fxml" />
+          <option value="http://maven.apache.org/xsd/" />
+          <option value="http://maven.apache.org/POM/" />
+          <option value="http://www.springframework.org/schema/" />
+          <option value="http://www.springframework.org/tags" />
+          <option value="http://www.springframework.org/security/tags" />
+          <option value="http://www.thymeleaf.org" />
+          <option value="http://www.jboss.org/j2ee/schema/" />
+          <option value="http://www.jboss.com/xml/ns/" />
+          <option value="http://www.ibm.com/webservices/xsd" />
+          <option value="http://activemq.apache.org/schema/" />
+          <option value="http://schema.cloudfoundry.org/spring/" />
+          <option value="http://schemas.xmlsoap.org/" />
+          <option value="http://cxf.apache.org/schemas/" />
+          <option value="http://primefaces.org/ui" />
+          <option value="http://tiles.apache.org/" />
+          <option value="http://{active_ip}" />
+          <option value="http://2captcha.com" />
+          <option value="http://sagror.prefeitura.sp.gov.br" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="52">
+            <item index="0" class="java.lang.String" itemvalue="boto3" />
+            <item index="1" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="2" class="java.lang.String" itemvalue="w3lib" />
+            <item index="3" class="java.lang.String" itemvalue="requests" />
+            <item index="4" class="java.lang.String" itemvalue="urllib3" />
+            <item index="5" class="java.lang.String" itemvalue="loguru" />
+            <item index="6" class="java.lang.String" itemvalue="requests-aws4auth" />
+            <item index="7" class="java.lang.String" itemvalue="unidecode" />
+            <item index="8" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="9" class="java.lang.String" itemvalue="opensearch-py" />
+            <item index="10" class="java.lang.String" itemvalue="setuptools" />
+            <item index="11" class="java.lang.String" itemvalue="html2text" />
+            <item index="12" class="java.lang.String" itemvalue="numpy" />
+            <item index="13" class="java.lang.String" itemvalue="pyhashxx" />
+            <item index="14" class="java.lang.String" itemvalue="celery-redbeat" />
+            <item index="15" class="java.lang.String" itemvalue="python-magic" />
+            <item index="16" class="java.lang.String" itemvalue="elasticsearch_dsl" />
+            <item index="17" class="java.lang.String" itemvalue="datefinder" />
+            <item index="18" class="java.lang.String" itemvalue="elasticsearch" />
+            <item index="19" class="java.lang.String" itemvalue="notifiers" />
+            <item index="20" class="java.lang.String" itemvalue="sentry-sdk" />
+            <item index="21" class="java.lang.String" itemvalue="PyPDF2" />
+            <item index="22" class="java.lang.String" itemvalue="asciichartpy" />
+            <item index="23" class="java.lang.String" itemvalue="scipy" />
+            <item index="24" class="java.lang.String" itemvalue="pytesseract" />
+            <item index="25" class="java.lang.String" itemvalue="pyppeteer" />
+            <item index="26" class="java.lang.String" itemvalue="orjson" />
+            <item index="27" class="java.lang.String" itemvalue="pdfkit" />
+            <item index="28" class="java.lang.String" itemvalue="click" />
+            <item index="29" class="java.lang.String" itemvalue="moto" />
+            <item index="30" class="java.lang.String" itemvalue="flower" />
+            <item index="31" class="java.lang.String" itemvalue="requests_mock" />
+            <item index="32" class="java.lang.String" itemvalue="py2captcha" />
+            <item index="33" class="java.lang.String" itemvalue="faker" />
+            <item index="34" class="java.lang.String" itemvalue="unicode" />
+            <item index="35" class="java.lang.String" itemvalue="pytest-html" />
+            <item index="36" class="java.lang.String" itemvalue="pdftotext" />
+            <item index="37" class="java.lang.String" itemvalue="aspose-words" />
+            <item index="38" class="java.lang.String" itemvalue="tensorflow" />
+            <item index="39" class="java.lang.String" itemvalue="botocore" />
+            <item index="40" class="java.lang.String" itemvalue="certifi" />
+            <item index="41" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="42" class="java.lang.String" itemvalue="importlib-metadata" />
+            <item index="43" class="java.lang.String" itemvalue="idna" />
+            <item index="44" class="java.lang.String" itemvalue="striprtf" />
+            <item index="45" class="java.lang.String" itemvalue="fake-useragent" />
+            <item index="46" class="java.lang.String" itemvalue="rich" />
+            <item index="47" class="java.lang.String" itemvalue="2captcha-python" />
+            <item index="48" class="java.lang.String" itemvalue="cchardet" />
+            <item index="49" class="java.lang.String" itemvalue="pyquery" />
+            <item index="50" class="java.lang.String" itemvalue="commonmark" />
+            <item index="51" class="java.lang.String" itemvalue="shellingham" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="W605" />
+          <option value="E722" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N813" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="requests.models.Response.html" />
+          <option value="typing.Mapping.__delitem__" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
