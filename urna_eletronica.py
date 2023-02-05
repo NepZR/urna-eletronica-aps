@@ -1,16 +1,16 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from view.cli_urna import UrnaEletronicaCLI
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+class UrnaEletronica(UrnaEletronicaCLI):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def run(self) -> None:
+        self.print_login_screen()
+        self.print_main_fiscal()
+        self.command_handler()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    app = UrnaEletronica()
+    app.run()

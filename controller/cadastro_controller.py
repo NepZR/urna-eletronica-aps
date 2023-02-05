@@ -8,12 +8,7 @@ from model.partido import Partido
 from controller.db_controller import DBController
 
 
-class Executivo:
-    def __init__(self) -> None:
-        pass
-
-
-class Legislativo:
+class CargoPolitico:
     def __init__(self, cargo: str) -> None:
         self.cargo_name = cargo
 
@@ -29,14 +24,23 @@ class CadastroController:
         self.db = DBController()
 
     @staticmethod
-    def _gen_sufixo_candidato(num_partido: str, tipo_cargo: Union[Executivo, Legislativo]) -> str:
+    def _gen_num_candidato(num_partido: str, tipo_cargo: CargoPolitico) -> str:
         random.seed(a=num_partido)
         generated_suffix = ""
         for _ in range(tipo_cargo.get_param_cargo()):
             generated_suffix += random.randint(a=0, b=9)
 
-    def cadastrar_candidato(self, cpf_candidato: str, partido_associado: Partido) -> Candidato:
-        num_partido = partido_associado.get_num_partido()
-        sufixo_candidato = self._gen_sufixo_candidato(num_partido)
+        num_candidato = num_partido + generated_suffix
+        return num_candidato
 
-        candidato = Candidato(cpf_candidato=cpf_candidato)
+    def cadastrar_candidato(self, cpf_candidato: str, partido_associado: Partido, cargo_concorrido: str) -> None:
+        num_partido = partido_associado.get_num_partido()
+        num_candidato = self._gen_num_candidato(num_partido, tipo_cargo=CargoPolitico(cargo=cargo_concorrido))
+
+        candidato = Candidato(
+            cpf_candidato=cpf_candidato,
+            num_candidato=num_candidato,
+            cargo_concorrido=cargo_concorrido
+        )
+
+        DBController().save_candidato(candidato_data=candidato)
