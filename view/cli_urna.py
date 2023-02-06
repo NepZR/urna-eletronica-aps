@@ -32,8 +32,6 @@ class UrnaEletronicaCLI(UrnaEletronicaCLIController):
             print()
             id_fiscal = input("> Sr(a). Fiscal, digite o seu Cod. ID: ")
 
-        self.login_active = True
-
     def print_main_fiscal(self) -> None:
         self._print_sys_header()
 

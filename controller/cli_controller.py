@@ -12,6 +12,9 @@ class UrnaEletronicaCLIController:
     def is_fiscal_valid(self, fiscal_id: str) -> bool:
         fiscal_exists = self.db_controller.db.exists(index="aps_urna_fiscal", id=fiscal_id)
 
+        if fiscal_exists:
+            self.login_active = True
+
         return fiscal_exists
 
     def get_eleitor_object(self, num_titulo: str) -> Eleitor:
